@@ -1,0 +1,92 @@
+.app-container {
+    position: relative;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #ef6c33;
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    & h1 {
+        color: #e1dddb;
+    }
+
+    & a {
+        color: #e1dddb;
+        font-size: 20px;
+    }
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    & h2 {
+        padding-bottom: 50px;
+        color: white;
+    }
+    &__slider {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+
+        &:nth-child(even) {
+            background-color: #0ea7b5;
+        }
+        &:nth-child(odd){
+            background-color: #0c4a60;
+        }
+    }
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-active{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.autoplay {
+    height: 200px;
+    & img {
+        height: 200px;
+    }
+}
+
+.single-item {
+    height: 200px;
+    & img {
+        height: 200px;
+    }
+}
+
+.multiple-items {
+    height:300px;
+    & img {
+        height: 200px;
+    }
+}
+
+.slick-arrow {
+    width: 100px;
+    border: 2px solid #0c4a60;
+    background-color: #0ea7b5;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+    &:hover {
+        background-color: #0c4a60;
+        transition: 0.5s ease;
+        color: white;
+    }
+}
